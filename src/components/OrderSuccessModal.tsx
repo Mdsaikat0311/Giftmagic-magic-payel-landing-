@@ -17,7 +17,7 @@ export const OrderSuccessModal: React.FC<OrderSuccessModalProps> = ({ order, onC
       order.includeKidsPayel ? '\n+ বাচ্চা মেয়েদের ১ জোড়া পায়েল' : ''
     }\nমোট মূল্য: ৳${order.total} (ক্যাশ অন ডেলিভারি)।\nঅনুগ্রহ করে নিশ্চিত করবেন।`
   );
-  const whatsappUrl = `https://wa.me/8801700000000?text=${whatsappConfirmationText}`;
+  const whatsappUrl = `https://wa.me/8801823417090?text=${whatsappConfirmationText}`;
 
   return (
     <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">

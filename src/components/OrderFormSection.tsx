@@ -25,7 +25,7 @@ export const OrderFormSection: React.FC<OrderFormSectionProps> = ({
   const [customerName, setCustomerName] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
-  const [deliveryArea, setDeliveryArea] = useState<'inside_dhaka' | 'outside_dhaka'>('inside_dhaka');
+  const [deliveryArea, setDeliveryArea] = useState<'inside_dhaka' | 'outside_dhaka'>('outside_dhaka');
   const [includeKidsPayel, setIncludeKidsPayel] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -324,18 +324,6 @@ export const OrderFormSection: React.FC<OrderFormSectionProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <label
-                onClick={() => setDeliveryArea('inside_dhaka')}
-                className={`p-3 rounded-lg border cursor-pointer flex items-center justify-between text-xs sm:text-sm ${
-                  deliveryArea === 'inside_dhaka'
-                    ? 'border-[#16a34a] bg-[#f0fdf4] font-semibold'
-                    : 'border-[#d6d3d1] bg-white'
-                }`}
-              >
-                <span>ঢাকার ভেতরে (২৪-৪৮ ঘণ্টা)</span>
-                <span className="font-mono font-bold tabular-nums">70.00৳</span>
-              </label>
-
-              <label
                 onClick={() => setDeliveryArea('outside_dhaka')}
                 className={`p-3 rounded-lg border cursor-pointer flex items-center justify-between text-xs sm:text-sm ${
                   deliveryArea === 'outside_dhaka'
@@ -345,6 +333,18 @@ export const OrderFormSection: React.FC<OrderFormSectionProps> = ({
               >
                 <span>ঢাকার বাইরে (২-৩ দিন)</span>
                 <span className="font-mono font-bold tabular-nums">110.00৳</span>
+              </label>
+
+              <label
+                onClick={() => setDeliveryArea('inside_dhaka')}
+                className={`p-3 rounded-lg border cursor-pointer flex items-center justify-between text-xs sm:text-sm ${
+                  deliveryArea === 'inside_dhaka'
+                    ? 'border-[#16a34a] bg-[#f0fdf4] font-semibold'
+                    : 'border-[#d6d3d1] bg-white'
+                }`}
+              >
+                <span>ঢাকার ভেতরে (২৪-৪৮ ঘণ্টা)</span>
+                <span className="font-mono font-bold tabular-nums">70.00৳</span>
               </label>
             </div>
           </div>
