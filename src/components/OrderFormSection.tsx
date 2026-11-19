@@ -30,7 +30,7 @@ export const OrderFormSection: React.FC<OrderFormSectionProps> = ({
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const KIDS_PAYEL_PRICE = 499;
+  const KIDS_PAYEL_PRICE = 399;
   const kidsAddonPrice = includeKidsPayel ? KIDS_PAYEL_PRICE : 0;
   const deliveryFee = deliveryArea === 'inside_dhaka' ? 70 : 110;
   const packageTotal = selectedPackage.salePrice * quantity;
@@ -246,7 +246,7 @@ export const OrderFormSection: React.FC<OrderFormSectionProps> = ({
 
               <div className="text-right shrink-0">
                 <div className="font-mono font-bold text-sm text-[#e11d48] tabular-nums">
-                  +499.00৳
+                  +399.00৳
                 </div>
                 <div className="font-mono text-[11px] text-stone-400 line-through tabular-nums">
                   799.00৳

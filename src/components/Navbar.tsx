@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           href="#"
           className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-wider text-[#c91d42] whitespace-nowrap shrink-0"
         >
-          JHILMILL
+          Gift Magic
         </a>
 
         {/* Zone 2: Clean Single-Line Nav Links */}

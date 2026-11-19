@@ -7,11 +7,11 @@ import { ReviewsSection } from './components/ReviewsSection';
 import { OrderFormSection } from './components/OrderFormSection';
 import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
-import { MobileStickyBar } from './components/MobileStickyBar';
 import { CartDrawer } from './components/CartDrawer';
 import { OrderSuccessModal } from './components/OrderSuccessModal';
 import { OrderTrackerModal } from './components/OrderTrackerModal';
 import { AdminOrdersDrawer } from './components/AdminOrdersDrawer';
+import { LivePurchaseNotification } from './components/LivePurchaseNotification';
 import { PRODUCT_PACKAGES } from './data/productData';
 import { ProductPackage, CustomerOrder } from './types';
 
@@ -74,10 +74,7 @@ export default function App() {
         onScrollToOrder={scrollToOrderForm}
       />
 
-      <MobileStickyBar
-        selectedPackage={selectedPackage}
-        onScrollToOrder={scrollToOrderForm}
-      />
+      <LivePurchaseNotification />
 
       <CartDrawer
         isOpen={isCartOpen}

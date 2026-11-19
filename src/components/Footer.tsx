@@ -15,7 +15,7 @@ export const Footer: React.FC<FooterProps> = ({
     <footer className="bg-[#fff0f3] border-t border-[#f0d8de] font-bengali py-6 pb-20 md:pb-8 px-4 text-center text-xs text-[#44403c] w-full">
       <div className="max-w-3xl mx-auto space-y-2">
         <p className="font-medium">
-          © ২০২৬ Jhilmill (ঝিলমিল ডট কম). সর্বস্বত্ব সংরক্ষিত।
+          © ২০২৬ GiftMagic. সর্বস্বত্ব সংরক্ষিত।
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 text-[#c91d42] font-medium">
           <button
